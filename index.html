@@ -1,0 +1,382 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Our Process - 1 Năm Bên Nhau 💕</title>
+
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;600;700&family=Pacifico&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Intro -->
+  <div id="intro-screen" class="intro-screen" aria-hidden="false">
+    <div id="intro-hearts" class="intro-hearts" aria-hidden="true"></div>
+    <div class="intro-content">
+      <h1 class="intro-title">Our Process</h1>
+      <p class="intro-subtitle">Một năm bên nhau</p>
+      <p class="intro-subtitle">Quang Thắng & Hương Lan</p>
+      <div class="intro-date">20.10.2024 - 20.10.2025</div>
+      <button id="enter-button" class="intro-button" aria-label="Enter">Bước vào kỷ niệm ❤️</button>
+    </div>
+    <div id="intro-particles" class="particles" aria-hidden="true"></div>
+  </div>
+
+  <!-- Main -->
+  <div id="main-content" class="main-content hidden">
+
+    <!-- floating hearts (main background) -->
+    <div id="floating-hearts" class="floating-hearts" aria-hidden="true"></div>
+
+    <!-- music widget -->
+    <div class="music-player" id="music-player">
+      <button id="music-toggle" class="music-toggle" aria-pressed="false" title="Bật/Tắt nhạc">🎵</button>
+      <audio id="background-music" loop preload="auto">
+        <source src="music/background.mp3" type="audio/mpeg">
+      </audio>
+    </div>
+
+    <!-- hero -->
+    <section class="hero">
+      <div class="container">
+        <h1 class="hero-title">Our Day</h1>
+        <p class="hero-subtitle">Chào mừng kỷ niệm 1 năm của chúng mình</p>
+        <p class="hero-description">
+          365 ngày của những kỷ niệm ấm áp — từ mưa, nắng, giận, buồn, cười vui, photobooth, đến những chuyến đi nhỏ.
+        </p>
+        <button class="hero-button" onclick="scrollToSection('timeline')">Khám phá hành trình ❤️</button>
+      </div>
+    </section>
+
+    <!-- timeline -->
+    <section id="timeline" class="timeline-section">
+      <div class="container">
+        <h2 class="section-title">Our Journey</h2>
+        <p class="section-subtitle">Những mốc son đáng nhớ</p>
+
+        <div class="timeline">
+          <!-- Items: 1..17 from user, icons adjusted -->
+          <!-- Each timeline-item structure:
+               <article class="timeline-item left|right">
+                 <div class="timeline-marker"><span class="icon">...</span></div>
+                 <div class="timeline-panel">...date+title+desc...</div>
+               </article>
+           -->
+
+          <article class="timeline-item left" data-animate="left">
+            <div class="timeline-marker" aria-hidden="true"><span class="icon">💬</span></div>
+            <div class="timeline-panel">
+              <div class="timeline-date">19/10/2024 — Ngày đầu 2 đứa gặp nhau</div>
+              <h3 class="timeline-title">Buổi nói chuyện kéo dài tới khuya</h3>
+              <p class="timeline-description">Bắt đầu từ 5:30 chiều và nói mãi tới 12 giờ đêm — nói quá trời từ chuyện vụn vặt đến sâu lắng; cảm giác như đã quen từ lâu.</p>
+            </div>
+          </article>
+
+          <article class="timeline-item right" data-animate="right">
+            <div class="timeline-marker" aria-hidden="true"><span class="icon">🌧️</span></div>
+            <div class="timeline-panel">
+              <div class="timeline-date">20/10/2024 — Ngày mình quen nhau</div>
+              <h3 class="timeline-title">Dính mưa rồi đắm luôn</h3>
+              <p class="timeline-description">Mưa to mà hai đứa quyết định ướt cùng nhau — lạnh mà ấm, quá là lãng mạnnnnn.</p>
+            </div>
+          </article>
+
+          <article class="timeline-item left" data-animate="left">
+            <div class="timeline-marker" aria-hidden="true"><span class="icon">🎓</span></div>
+            <div class="timeline-panel">
+              <div class="timeline-date">26/10/2024 — Kỉ niệm đầu tiên cùng nhau</div>
+              <h3 class="timeline-title">Mừng bạn tốt nghiệp</h3>
+              <p class="timeline-description">Gặp Hội đồng quản trị cùng anh chị, trộm vía là được mọi người khen hehe — sau đó còn có một buổi an tối ấm áp ~~, quá nà bảnhhhh.</p>
+            </div>
+          </article>
+
+          <article class="timeline-item right" data-animate="right">
+            <div class="timeline-marker" aria-hidden="true"><span class="icon">🎄</span></div>
+            <div class="timeline-panel">
+              <div class="timeline-date">24/12/2024 — Giáng sinh đầu tiên</div>
+              <h3 class="timeline-title">Photobooth & niềm vui</h3>
+              <p class="timeline-description">Chụp photobooth cùng nhau, mặc đồ ấm, cười nhiều — Tưởng sẽ nhiều nhưng mà không duy trì được, lần đầu cho đến hôm nay.</p>
+            </div>
+          </article>
+
+          <article class="timeline-item left" data-animate="left">
+            <div class="timeline-marker" aria-hidden="true"><span class="icon">🎆</span></div>
+            <div class="timeline-panel">
+              <div class="timeline-date">01/01/2025 — Đón năm mới</div>
+              <h3 class="timeline-title">Khoảnh khắc đáng nhớ</h3>
+              <p class="timeline-description">Đón năm mới cùng nhau, một khởi đầu ấm áp với rất nhiều cảm xúc — nhắc lại vẫn thấy cười.</p>
+            </div>
+          </article>
+
+          <article class="timeline-item right" data-animate="right">
+            <div class="timeline-marker" aria-hidden="true"><span class="icon">🌸</span></div>
+            <div class="timeline-panel">
+              <div class="timeline-date">02/01/2025 — Sinh nhật bạn</div>
+              <h3 class="timeline-title">Hoa nhẹ, tình nặng</h3>
+              <p class="timeline-description">Đã mừng trước, hôm này chỉ tặng bó hoa nhỏ — đi dạo và nói chuyện cùng nhau.</p>
+            </div>
+          </article>
+
+          <article class="timeline-item left" data-animate="left">
+            <div class="timeline-marker" aria-hidden="true"><span class="icon">🏔️</span></div>
+            <div class="timeline-panel">
+              <div class="timeline-date">10/01/2025 — Chuyến đi đầu tiên: Đà Lạt</div>
+              <h3 class="timeline-title">Chuyến đi của năm</h3>
+              <p class="timeline-description">Sương mù, cà phê, cảnh đẹp, ga giường và nhiều hình xinh — chuyến đi bắt đầu cho việc gắn kết tình cảm 2 đứa nhiều hơn hehe.</p>
+            </div>
+          </article>
+
+          <article class="timeline-item right" data-animate="right">
+            <div class="timeline-marker" aria-hidden="true"><span class="icon">🎂</span></div>
+            <div class="timeline-panel">
+              <div class="timeline-date">11/01/2025 — Sinh nhật chung + Anni 3 tháng</div>
+              <h3 class="timeline-title">Bánh kem & kỉ niệm</h3>
+              <p class="timeline-description">Trong chuyến Đà Lạt, thêm giây phút sinh nhật chung và kỉ niệm 3 tháng — quá nà ấm áp.</p>
+            </div>
+          </article>
+
+          <article class="timeline-item left" data-animate="left">
+            <div class="timeline-marker" aria-hidden="true"><span class="icon">🎈</span></div>
+            <div class="timeline-panel">
+              <div class="timeline-date">20/01/2025 — Sinh nhật mình</div>
+              <h3 class="timeline-title">Sinh nhật online của mình</h3>
+              <p class="timeline-description">Đón sinh nhật online vì Tết đến sớm — có chút buồn nhưng vẫn đầy tình cảm, hôm này chàng đã rơi lệ.</p>
+            </div>
+          </article>
+
+          <article class="timeline-item right" data-animate="right">
+            <div class="timeline-marker" aria-hidden="true"><span class="icon">💘</span></div>
+            <div class="timeline-panel">
+              <div class="timeline-date">14/02/2025 — Valentine đầu tiên</div>
+              <h3 class="timeline-title">Trùng ngày bạn vào Sài Gòn</h3>
+              <p class="timeline-description">Bạn vào SG đúng Valentine — đi chơi, ăn uống và tận hưởng ngày thật vừa vặn.</p>
+            </div>
+          </article>
+
+          <article class="timeline-item left" data-animate="left">
+            <div class="timeline-marker" aria-hidden="true"><span class="icon">🌊</span></div>
+            <div class="timeline-panel">
+              <div class="timeline-date">08/03/2025 — Chuyến đi thứ 2: Phước Hải</div>
+              <h3 class="timeline-title">Gắn kết sau Tết</h3>
+              <p class="timeline-description">Mở ra nhiều kỷ niệm khi đi chơi, chụp ảnh và tận hưởng không khí biển.</p>
+            </div>
+          </article>
+
+          <article class="timeline-item right" data-animate="right">
+            <div class="timeline-marker" aria-hidden="true"><span class="icon">💞</span></div>
+            <div class="timeline-panel">
+              <div class="timeline-date">19/04/2025 — Anni 6 tháng</div>
+              <h3 class="timeline-title">Đồ đạc xinh iu, tình vẫn trẻ</h3>
+              <p class="timeline-description">Hai đứa diện đồ xinh, đi chơi và lưu giữ những khoảnh khắc dễ thương.</p>
+            </div>
+          </article>
+
+          <article class="timeline-item left" data-animate="left">
+            <div class="timeline-marker" aria-hidden="true"><span class="icon">🎇</span></div>
+            <div class="timeline-panel">
+              <div class="timeline-date">30/04 - 01/05/2025 — Ra mắt & xem pháo hoa</div>
+              <h3 class="timeline-title">Ra mắt gia đình nhà Dì & ngắm pháo hoa</h3>
+              <p class="timeline-description">Ra mắt nhà Dì, lại trộm vía được khen; tối xem pháo hoa lần đầu cùng nhau, quá đã nuônnnn.</p>
+            </div>
+          </article>
+
+          <article class="timeline-item right" data-animate="right">
+            <div class="timeline-marker" aria-hidden="true"><span class="icon">🌼</span></div>
+            <div class="timeline-panel">
+              <div class="timeline-date">01/06/2025 — Tết thiếu nhi</div>
+              <h3 class="timeline-title">Bó hoa handmade</h3>
+              <p class="timeline-description">Bó hoa do mình làm tặng bạn — nhỏ xinh mà nhiều tình cảm.</p>
+            </div>
+          </article>
+
+          <article class="timeline-item left" data-animate="left">
+            <div class="timeline-marker" aria-hidden="true"><span class="icon">🏖️</span></div>
+            <div class="timeline-panel">
+              <div class="timeline-date">26/07/2025 — Chuyến đi thứ 3: Thạnh An</div>
+              <h3 class="timeline-title">Biển & ảnh xinh</h3>
+              <p class="timeline-description">Bạn được chụp nhiều ảnh xinh, đi chơi quá dui, +1 kỉ niệm đẹp hehe.</p>
+            </div>
+          </article>
+
+          <article class="timeline-item right" data-animate="right">
+            <div class="timeline-marker" aria-hidden="true"><span class="icon">🏡</span></div>
+            <div class="timeline-panel">
+              <div class="timeline-date">24/08/2025 — Lần đầu tiên đi Home</div>
+              <h3 class="timeline-title">Bạn ăn đồ mình nấu & mình được khen</h3>
+              <p class="timeline-description">Hẹ hẹ hôm này thì là lần đầu đi home, cũng dui phết~~.</p>
+            </div>
+          </article>
+
+          <article class="timeline-item left" data-animate="left">
+            <div class="timeline-marker" aria-hidden="true"><span class="icon">🤝</span></div>
+            <div class="timeline-panel">
+              <div class="timeline-date">Nhiều lần — Ra mắt Gia Đình mình & hội Triple Dating</div>
+              <h3 class="timeline-title">Ra mắt Gia Đình+ Triple Dating</h3>
+              <p class="timeline-description">Bạn đã gặp Gia Đình mình 3 lần; cùng nhau đi chơi với hội công ty, dui dẻ mà hen kkaka.</p>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- From You & Me -->
+    <section id="love-letters" class="love-letters-section">
+      <div class="container">
+        <h2 class="section-title">From You & Me</h2>
+        <p class="section-subtitle">Những lời yêu thương gửi nhau</p>
+        <div class="letters-grid">
+          <article class="letter-card" data-animate="scale">
+            <div class="envelope">
+              <div class="envelope-flap"></div>
+              <div class="envelope-body"></div>
+            </div>
+            <div class="letter-content">
+              <h3 class="letter-title">Từ Anhiuuu ❤️</h3>
+              <p class="letter-text">Gửi bạn yêu, một năm đã trôi qua thật nhanh. Cảm ơn bạn đã luôn ở bên anh, cùng anh chia sẻ những niềm vui, nỗi buồn. Bạn là điều tuyệt vời mà Ông Trời đã gửi tặng anh. Iu bạn nhiều nhiều lắm!</p>
+              <div class="letter-signature">- Anhiuuu</div>
+            </div>
+          </article>
+
+          <article class="letter-card" data-animate="scale">
+            <div class="envelope">
+              <div class="envelope-flap"></div>
+              <div class="envelope-body"></div>
+            </div>
+            <div class="letter-content">
+              <h3 class="letter-title">Từ Embeiuuu 💕</h3>
+              <p class="letter-text">*Khúc này anh đợi bạn điền vào nhannn*</p>
+              <div class="letter-signature">- Embeiuuu</div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Our Memories: 12 ảnh grid 4x3 -->
+    <section id="gallery" class="gallery-section">
+      <div class="container">
+        <h2 class="section-title">Our Memories</h2>
+        <p class="section-subtitle">Những khoảnh khắc đẹp nhất</p>
+        <div class="photo-grid grid-4cols">
+          <!-- 12 ảnh -->
+          <div class="photo-item" data-animate="zoom"><img src="photos/1.jpg" alt="1" onerror="this.src='https://placehold.co/800x800/F9D9E2/ffffff?text=1'"></div>
+          <div class="photo-item" data-animate="zoom"><img src="photos/2.jpg" alt="2" onerror="this.src='https://placehold.co/800x800/FFF8F9/F9D9E2?text=2'"></div>
+          <div class="photo-item" data-animate="zoom"><img src="photos/3.jpg" alt="3" onerror="this.src='https://placehold.co/800x800/FCECEC/F9D9E2?text=3'"></div>
+          <div class="photo-item" data-animate="zoom"><img src="photos/4.jpg" alt="4" onerror="this.src='https://placehold.co/800x800/F9D9E2/ffffff?text=4'"></div>
+          <div class="photo-item" data-animate="zoom"><img src="photos/5.jpg" alt="5" onerror="this.src='https://placehold.co/800x800/FFF8F9/F9D9E2?text=5'"></div>
+          <div class="photo-item" data-animate="zoom"><img src="photos/6.jpg" alt="6" onerror="this.src='https://placehold.co/800x800/FCECEC/F9D9E2?text=6'"></div>
+          <div class="photo-item" data-animate="zoom"><img src="photos/7.jpg" alt="7" onerror="this.src='https://placehold.co/800x800/F9D9E2/ffffff?text=7'"></div>
+          <div class="photo-item" data-animate="zoom"><img src="photos/8.jpg" alt="8" onerror="this.src='https://placehold.co/800x800/FFF8F9/F9D9E2?text=8'"></div>
+          <div class="photo-item" data-animate="zoom"><img src="photos/9.jpg" alt="9" onerror="this.src='https://placehold.co/800x800/FCECEC/F9D9E2?text=9'"></div>
+          <div class="photo-item" data-animate="zoom"><img src="photos/10.jpg" alt="10" onerror="this.src='https://placehold.co/800x800/F9D9E2/ffffff?text=10'"></div>
+          <div class="photo-item" data-animate="zoom"><img src="photos/11.jpg" alt="11" onerror="this.src='https://placehold.co/800x800/FFF8F9/F9D9E2?text=11'"></div>
+          <div class="photo-item" data-animate="zoom"><img src="photos/12.jpg" alt="12" onerror="this.src='https://placehold.co/800x800/FCECEC/F9D9E2?text=12'"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Countdown (from 20/10/2024) -->
+    <section id="countdown" class="countdown-section">
+      <div class="container">
+        <h2 class="section-title">Together</h2>
+        <p class="section-subtitle">Chúng ta đã bên nhau được</p>
+        <div class="countdown-grid">
+          <div class="countdown-item" data-animate="bounce">
+            <div class="countdown-number" id="days">0</div>
+            <div class="countdown-label">Ngày</div>
+          </div>
+          <div class="countdown-item" data-animate="bounce">
+            <div class="countdown-number" id="hours">0</div>
+            <div class="countdown-label">Giờ</div>
+          </div>
+          <div class="countdown-item" data-animate="bounce">
+            <div class="countdown-number" id="minutes">0</div>
+            <div class="countdown-label">Phút</div>
+          </div>
+          <div class="countdown-item" data-animate="bounce">
+            <div class="countdown-number" id="seconds">0</div>
+            <div class="countdown-label">Giây</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Our Dreams 6 items grid 3x2 -->
+    <section id="wishes" class="wishes-section">
+      <div class="container">
+        <h2 class="section-title">Our Dreams</h2>
+        <p class="section-subtitle">Những ước mơ của chúng mình</p>
+        <div class="wishes-grid grid-3cols">
+          <div class="wish-card" data-animate="float"><div class="wish-icon">🏠</div><h3>Ngôi nhà nhỏ</h3><p>Một tổ ấm ấm áp để cùng xây dựng cuộc sống.</p></div>
+          <div class="wish-card" data-animate="float"><div class="wish-icon">✈️</div><h3>Du lịch thế giới</h3><p>Khám phá vùng đất mới, trải nghiệm cùng nhau.</p></div>
+          <div class="wish-card" data-animate="float"><div class="wish-icon">👶</div><h3>Gia đình nhỏ</h3><p>Xây dựng tổ ấm và nuôi dạy con cái trong yêu thương.</p></div>
+          <div class="wish-card" data-animate="float"><div class="wish-icon">💼</div><h3>Sự nghiệp vững</h3><p>Cố gắng cho sự nghiệp riêng, đóng góp cho sự thành công chung.</p></div>
+          <!-- Changed "Sống xanh" to "Cùng nhau phát triển" -->
+          <div class="wish-card" data-animate="float"><div class="wish-icon">🌱</div><h3>Cùng nhau phát triển</h3><p>Phải cùng nhau phát triển bản thân tốt hơn ngày hôm qua.</p></div>
+          <div class="wish-card" data-animate="float"><div class="wish-icon">🎉</div><h3>Mãi bên nhau</h3><p>Luôn bên nhau qua mọi thăng trầm, cùng nhau già đi.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <p class="footer-text">Cảm ơn Embe đã là một phần quan trọng trong cuộc đời anh. Anh yêu bạn nhiều hơn cách mà một lời nói có thể diễn tả.</p>
+        <p class="footer-signature">Made with ❤️ for our 1st anniversary</p>
+        <p class="footer-date">20.10.2024 - 20.10.2025</p>
+      </div>
+
+      <!-- easter egg heart (bottom-left) -->
+      <div id="easter-egg" class="easter-egg" title="Tặng tim">
+        <svg id="egg-svg" viewBox="0 0 32 29.6" xmlns="http://www.w3.org/2000/svg" aria-hidden="false">
+          <defs>
+            <linearGradient id="g1" x1="0" x2="1">
+              <stop offset="0%" stop-color="#ff9fb2"/>
+              <stop offset="100%" stop-color="#e91e63"/>
+            </linearGradient>
+            <clipPath id="heartClip2">
+              <path d="M23.6 0c-2.9 0-5.4 1.5-6.6 3.8C15.8 1.5 13.3 0 10.4 0 4.7 0 0 4.7 0 10.4c0 11.3 16 19.2 16 19.2s16-8 16-19.2C32 4.7 27.3 0 21.6 0z"/>
+            </clipPath>
+          </defs>
+          <path d="M23.6 0c-2.9 0-5.4 1.5-6.6 3.8C15.8 1.5 13.3 0 10.4 0 4.7 0 0 4.7 0 10.4c0 11.3 16 19.2 16 19.2s16-8 16-19.2C32 4.7 27.3 0 21.6 0z"
+                fill="none" stroke="#e91e63" stroke-width="1.6"/>
+          <rect id="heart-fill-rect" x="0" y="29.6" width="32" height="29.6" fill="url(#g1)" clip-path="url(#heartClip2)"></rect>
+        </svg>
+        <div id="egg-text" class="egg-text">0/10</div>
+      </div>
+
+    </footer>
+
+  </div>
+
+  <!-- modal to show "Xem lại hành trình" button then video -->
+  <div id="egg-unlock-modal" class="egg-unlock-modal hidden" role="dialog" aria-modal="true" aria-hidden="true">
+    <div class="egg-unlock-inner">
+      <h3>✨ Đã đầy tim! ✨</h3>
+      <p>Muốn xem lại hành trình của chúng ta chứ? Nhấn nút bên dưới để xem quà nhé.</p>
+      <div class="egg-unlock-actions">
+        <button id="egg-start-btn" class="btn-primary">Xem lại hành trình</button>
+        <button id="egg-skip-btn" class="btn-ghost">Để sau</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- video modal -->
+  <div id="egg-modal" class="egg-modal hidden" role="dialog" aria-modal="true" aria-hidden="true">
+    <div class="egg-modal-inner">
+      <button id="egg-modal-close" class="egg-modal-close" aria-label="Đóng">✕</button>
+      <h3>🎬 Một món quà nhỏ</h3>
+      <video id="egg-video" controls playsinline preload="metadata" style="width:100%; border-radius:8px;">
+        <source src="video/special.mp4" type="video/mp4">
+        Trình duyệt không hỗ trợ video.
+      </video>
+    </div>
+  </div>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
